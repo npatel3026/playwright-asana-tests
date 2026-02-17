@@ -16,6 +16,7 @@ async function login(page) {
   
   // Wait for navigation after login
   await page.waitForLoadState('networkidle');
+  await page.waitForTimeout(1000);
 }
 
 module.exports = { login };
